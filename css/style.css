@@ -1,0 +1,361 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.padding-zero {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.margin-zero {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.desc1 a {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+}
+.desc1 a:hover {
+    color: #ffb703;
+}
+section {
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section div img {
+    transition: transform 0.1s linear;
+}
+section div img:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(10deg);
+}
+h1, h2, h3 {
+    color: #333;
+}
+.title-holder {
+    background-image: url('scope-green.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-color: #aad3df;
+    padding: 40px 0;
+    user-select: none;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.factors {
+    background-image: url('pattern1.png');
+}
+.factors h2 {
+    text-align: center;
+    user-select: none;
+    font-size: 36px;
+    color: #023047;
+    text-shadow: 0 0 3px #1e8fff94;
+}
+#sections {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 35px;
+}
+#sections section {
+    position: relative;
+    padding-bottom: 90px;
+}
+#sections section div h3 {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+#sections a {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+}
+
+#sections a:hover {
+    color: #ffb703;
+}
+
+#sections section {
+    border-radius: 7px;
+}
+
+#sections section div img {
+    max-width: 100%;
+    height: auto;
+}
+/* start */
+#sections2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 35px;
+}
+#sections2 section {
+    position: relative;
+    padding-bottom: 90px;
+}
+#sections2 section div h3 {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+#sections2 a {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+}
+
+#sections2 a:hover {
+    color: #ffb703;
+}
+
+#sections2 section {
+    border-radius: 7px;
+}
+
+#sections2 section div img {
+    max-width: 100%;
+    height: auto;
+}
+/* end */
+.sex h3,.general h3 {
+    margin-top: 30px;
+}
+.sleep h3 {
+    margin-top: 45px;
+}
+.physical h3 {
+    margin-top: 17px;
+}
+.age h3 {
+    margin-top: 20px;
+}
+
+.comorbidities {
+    background-image: url('pattern3.png');
+}
+.comorbidities h2 {
+    text-align: center;
+    user-select: none;
+    font-size: 36px;
+    color: #023047;
+    text-shadow: 0 0 3px #ff441e94;
+}
+.comorbidities-text {
+    background-color: #F1F1F1;
+}
+.prediction {
+    background-image: url('pattern2.png');
+}
+.prediction h2 {
+    text-align: center;
+    user-select: none;
+    font-size: 36px;
+    color: #023047;
+    text-shadow: 0 0 3px #1ef8ff94;
+}
+.prediction-text {
+    background-color: #F1F1F1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%; 
+    max-height: 700px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.plot {
+    display: none;
+    width: 100%;
+    height: 400px;
+}
+
+.diabetes a {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+}
+
+.diabetes a:hover {
+    color: #ffb703;
+}
+
+.comorbidities {
+    user-select: none;
+    background-color: rgb(242, 242, 242);
+}
+
+.prediction-pic {
+    text-align: center;
+    background-color: #fff;
+}
+.prediction-pic img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+}
+
+ .form-holder {
+    width: 700px;
+    height: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+ }
+
+.form-holder form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.form-holder p {
+    text-align: center;
+    user-select: none;
+    font-size: 36px;
+    color: #023047;
+    text-shadow: 0 0 3px #1ef8ff94;
+    font-weight: 600;
+
+}
+
+.form-holder form label {
+    width: auto;
+}
+
+.input-right {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.input-left {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 50%;
+    margin: 20px auto;
+    background: linear-gradient(140.14deg, #65ceff 15.05%, #156fd6 114.99%)
+        padding-box,
+      linear-gradient(142.51deg, #65ceff 8.65%, #156fd6 88.82%) border-box;
+    border-radius: 7px;
+    border: 2px solid transparent;
+  
+    text-shadow: 1px 1px 1px #00000040;
+    box-shadow: 8px 8px 20px 0px #45090059;
+  
+    padding: 5px 10px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+  }
+  
+  .button:hover {
+    box-shadow: none;
+    opacity: 80%;
+  }
+
+/* .form-holder form input:not([type="submit"]){
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    margin: 5px 5px;
+    outline: none;
+    border: 2px solid #d3d3d386;
+    border-radius: 5px;
+} */
+
+.form-holder form input[type="text"]{
+    margin: 0 auto;
+    width: 170px;
+    outline: none;
+    border: 2px solid #d3d3d386;
+    border-radius: 5px;
+}
+
+.form-holder form input:not([type="submit"]):focus{
+    outline: 2px solid #4da6ff79;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; 
+}
+
+footer p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 12px;
+}
+
+
+.form-holder form input:nth-child(1):focus label:nth-child(1) {
+    color: #4da6ff79;
+}
+
+

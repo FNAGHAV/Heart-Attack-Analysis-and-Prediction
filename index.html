@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="title-holder margin-zero">
+        <h1 class="title">Heart Attack Project</h1>
+    </section>
+    
+    <section class="desc1 margin-zero">
+
+        <h2><span>Why Heart Attack?</span></h2>
+        <p>Heart attacks are a leading cause of morbidity and mortality worldwide. 
+        Understanding the distribution and risk factors of heart attacks is crucial 
+        for improving public health outcomes. By analyzing data on heart attacks 
+        across different regions and demographics, we can identify patterns and 
+        potential areas for intervention. This webpage aims to provide insights 
+        into the prevalence of heart attacks in the USA and explore various factors
+        that may influence the likelihood of experiencing a heart attack.
+        <a target="_blank" href="https://www.heart.org/en/health-topics/heart-attack">Learn More!</a>
+        </p>
+        <!-- <div id="map" class="map-container"></div> -->
+        <iframe src="us_heart_attack_heatmap.html" width="100%" height="600px"></iframe>
+    </section>
+
+    <section class="factors">
+        <h2><span>Factors That Affect the Likelihood of a Heart Attack in Our Dataset</span></h2>
+    </section>
+    
+    <section id="sections">
+        <!-- Start SEX -->
+        <section>
+            <div class="sex">
+                <img src="sex.png" alt="Factor 1" onclick="showPlot('sexPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('sexPlot')">SEX</a></h3>
+            </div>
+        </section>
+
+        <!-- Start General Health -->
+        <section>
+            <div class="general">
+                <img src="general health.png" alt="Factor 2" onclick="showPlot('GeneralHealthPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('GeneralHealthPlot')">General Health</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Sleep -->
+        <section>
+            <div class="sleep">
+                <img src="sleep.png" alt="Factor 3" onclick="showPlot('SleepHoursPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('SleepHoursPlot')">Sleep</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Physical Activity -->
+        <section class="physical">
+            <div>
+                <img src="physical activity.png" alt="Factor 4" onclick="showPlot('PhysicalActivitiesPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('PhysicalActivitiesPlot')">Physical Activity</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Age -->
+        <section class="age">
+            <div>
+                <img src="age.png" alt="Factor 5" onclick="showPlot('AgeCategoryPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('AgeCategoryPlot')">Age</a></h3>
+            </div>
+        </section>
+    </section>
+
+    <section class="comorbidities">
+        <h2><span>Reciprocal Relationships and Comorbidities</span></h2>
+    </section>
+    <section class="comorbidities-text">
+        <p>Heart attacks often occur alongside other health conditions, which can mutually influence each other. 
+            This section focuses on identifying these comorbidities and understanding their reciprocal relationships with heart attacks in our dataset.</p>
+    </section>
+
+    <section id="sections2">
+        <!-- Start Angina -->
+        <section class="angina">
+            <div>
+                <img src="Angina.png" alt="Comorbidity 1" onclick="showPlot('AnginaPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('AnginaPlot')">Angina</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Diabetes -->
+        <section class="diabetes">
+            <div>
+                <img src="diabetes.png" alt="Comorbidity 2" onclick="showPlot('diabetesPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('diabetesPlot')">Diabetes</a></h3>
+            </div>
+        </section>
+
+        <!-- Start COPD -->
+        <section class="copd">
+            <div>
+                <img src="COPD.jpg" alt="Comorbidity 3" onclick="showPlot('COPDPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('COPDPlot')">Chronic Obstructive Pulmonary Disease</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Arthritis -->
+        <section>
+            <div>
+                <img src="Arthritis.png" alt="Comorbidity 4" onclick="showPlot('ArthritisPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('ArthritisPlot')">Arthritis</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Kidney Disease -->
+        <section>
+            <div>
+                <img src="kidney.png" alt="Comorbidity 5" onclick="showPlot('KidneyPlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('KidneyPlot')">Kidney Disease</a></h3>
+            </div>
+        </section>
+
+        <!-- Start Stroke -->
+        <section>
+            <div>
+                <img src="stroke.png" alt="Comorbidity 6" onclick="showPlot('strokePlot')"/>
+                <h3><a href="javascript:viod(0)" onclick="showPlot('strokePlot')">Stroke</a></h3>
+            </div>
+        </section>
+    </section>
+
+    <section class="prediction">
+        <h2><span>Mochine learning Model selection</span></h2>
+    </section> 
+    <section class="prediction-pic">
+        <img src="Table.jpg" alt="">
+    </section>
+    <section class="form-holder">
+        <p>Predict Your Heart Attack Risk with my Model</p>
+        <form action="connect.php" method="post">
+            <div class="input-right">
+                <label for="angina">Have you Had Angina?</label>
+                <input type="text" name="angina" id="angina" title="Had Angina">
+                <label for="bmi">What is your BMI?</label>
+                <input type="text" name="bmi" id="bmi" title="BMI">
+            </div>
+            <div class="input-left">
+                <label for="sleep">On average,how many hours of sleep do you get in a 24-hour period?</label>
+            <input type="text" name="sleep" id="sleep" title="Sleep Hours">
+            <label for="physical">For how many days during the past 30 days was your physical health not good?</label>
+            <input type="text" name="physical" id="physical" title="Physical Health Days">
+            <label for="mental">For how many days during the past 30 days was your mental Health not good?</label>
+            <input type="text" name="mental" id="mental" title="Mental Health Days">
+            </div>
+            <input class="button" type="submit" value="Button">
+        </form>
+    </section> 
+
+    <!-- Modal for interactive plots -->
+    <div id="plotModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePlot()">&times;</span>
+            <div id="sexPlot" class="plot">
+                <iframe src="SexPlot_HeartAttack.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="GeneralHealthPlot" class="plot">
+                <iframe src="GeneralHealthPlot_HeartAttack.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="PhysicalActivitiesPlot" class="plot">
+                <iframe src="PhysicalActivitiesPlot_HeartAttack.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="AgeCategoryPlot" class="plot">
+                <iframe src="AgeCategoryPlot_HeartAttack.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="SleepHoursPlot" class="plot">
+                <iframe src="SleepHoursPlot_HeartAttack.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="diabetesPlot" class="plot">
+                <iframe src="HadDiabetesPlot.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="AnginaPlot" class="plot">
+                <iframe src="HadAnginaPlot.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="COPDPlot" class="plot">
+                <iframe src="HadCOPDPlot.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="ArthritisPlot" class="plot">
+                <iframe src="HadArthritisPlot.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="KidneyPlot" class="plot">
+                <iframe src="HadKidneyDiseasePlot.html" width="100%" height="100%"></iframe>
+            </div>
+            <div id="strokePlot" class="plot">
+                <iframe src="HadStrokePlot.html" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>This project was completed as a part of boot camp final project in June 2024</p>
+        <p>Designed and developed by FaraNaghavi</p>
+        <p>&copy; 2024 Fara Naghavi</p>
+    </footer>
+
+    <!-- Include Leaflet JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <!-- Include Plotly for interactive plots -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Include your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
