@@ -111,10 +111,3 @@ Modal Functionality: Functions to show and close interactive plot modals.
 
 A.4 Deployment
 The project was designed and developed by me to be deployed on a hosting platform, allowing it to receive data, run the model, and provide the output.
-
-
-
-
-
-
->>>>>>> 7d3726517e8e796d334fe45de27f984afef072cd
