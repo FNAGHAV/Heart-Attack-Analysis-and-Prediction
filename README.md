@@ -19,7 +19,6 @@ Handling Missing Values:
 The number of NaN values in each column is counted and dropped.
 The number of duplicated values in each column is counted and dropped.
 
-
 2. Data Visualizations
 
 2-2 HeartAttack_Visualization_for_Html_FN.ipynb
@@ -91,11 +90,11 @@ The website was created to present the results of the analysis and the performan
 
 # Technical Details
 
-A.1 HTML
+A.1 HTML:
 
 The HTML structure includes various sections for the introduction, heatmap, factors, comorbidities, and machine learning models. Interactive elements are embedded using <iframe> tags.
 
-A.2 CSS
+A.2 CSS:
 
 The CSS file styles the page, ensuring a clean and professional look. Key styles include:
 
@@ -104,10 +103,11 @@ Title and Headers: Styles the main title and section headers.
 Interactive Elements: Provides hover effects and transitions for images and links.
 Grid Layout: Uses CSS Grid to layout the factor and comorbidity sections.
 
-A.3 JavaScript
+A.3 JavaScript:
 
 A simple JavaScript file handles the interactivity of the plots:
 Modal Functionality: Functions to show and close interactive plot modals.
 
-A.4 Deployment
+A.4 Deployment:
 The result was deployed on GitHub as a webpage.
+https://fnaghav.github.io/Heart-Attack-Analysis-and-Prediction/ 
