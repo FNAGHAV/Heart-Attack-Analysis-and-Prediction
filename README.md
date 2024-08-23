@@ -110,4 +110,4 @@ A simple JavaScript file handles the interactivity of the plots:
 Modal Functionality: Functions to show and close interactive plot modals.
 
 A.4 Deployment
-The project was designed and developed by me to be deployed on a hosting platform, allowing it to receive data, run the model, and provide the output.
+The project was designed and developed by me to be deployed on a hosting platform.
