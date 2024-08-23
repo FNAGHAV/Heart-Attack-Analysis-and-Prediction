@@ -86,7 +86,7 @@ Stroke
 
 A.4 Machine Learning Models
 
-The website was created to present the results of the analysis and the performance of the machine learning models, and to provide an input section for receiving user inputs.
+The website was created to present the results of the analysis and the performance of the machine learning models.
 
 
 # Technical Details
@@ -110,4 +110,4 @@ A simple JavaScript file handles the interactivity of the plots:
 Modal Functionality: Functions to show and close interactive plot modals.
 
 A.4 Deployment
-The project was designed and developed by me to be deployed on a hosting platform.
+The result was deployed on GitHub as a webpage.
